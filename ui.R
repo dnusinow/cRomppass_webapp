@@ -12,7 +12,7 @@ fluidPage(
                 h3("Input Instructions"),
                 downloadButton("download.sample.input", "Download Sample Input"),
                 br(),
-                p("The input file must be a tab-delimited text file with the following five columns:"),
+                p("The input file must be a tab-delimited text file no larger than 5Mb with the following five columns:"),
                 withTags(
                     ol(li("Experiment ID"),
                        li("Replicate"),
