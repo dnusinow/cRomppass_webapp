@@ -67,8 +67,7 @@ function(input, output) {
     )
 
     output$comppassLogo <- renderImage({
-        filename <- normalizePath(system.file("extdata", "CompPASS_reflect_logo_smaller.png",
-                                              package = "cRomppass"))
+        filename <- normalizePath(file.path("./img", "CompPASS_reflect_logo_smaller.png"))
         list(src = filename, alt = "CompPASS Logo")
     }, deleteFile = FALSE)
 
